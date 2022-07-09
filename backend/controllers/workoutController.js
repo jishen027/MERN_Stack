@@ -8,7 +8,6 @@ const getWorkouts = async (req, res) => {
 }
 
 //get single workout
-
 const getWorkout = async (req, res) => {
   const { id } = req.params;
 
@@ -35,7 +34,6 @@ const createWorkout = async (req, res) => {
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
-  res.json({ message: "POST a new workout" });
 }
 
 //delete a workout 
